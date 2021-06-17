@@ -1,0 +1,10 @@
+@page "/radzennumericexample"
+
+<h1>RadzenNumeric Example</h1>
+
+<RadzenNumeric TValue="decimal" Format="C" @bind-Value=@currencyValue Placeholder="input currency value..." ShowUpDown="false" />
+
+@code {
+    private decimal currencyValue = 1200.50m;
+
+}
